@@ -13,31 +13,43 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title: Sohair Ahmad
+email: sohair1991@gmail.com
+profile_picture: https://www.gravatar.com/avatar/55f58f4a7e64e4c118a1de7ffcc2681d.jpg?s=250
+# cover_image: https://www.gravatar.com/avatar/55f58f4a7e64e4c118a1de7ffcc2681d.jpg?s=250
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Personal website, portfolio of Sohair Ahmad, software developer, technical lead and people manager
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: minima-bootstrap
 plugins:
   - jekyll-feed
+
+header_pages:
+- resume.md
+- about.md
+
+# minima-bootstrap settings
+twitter_username: iamsohair
+github_username:  Sohair63
+linkedin_username: sohair-ahmad
+instagram_username: isohairahmad
+show_twitter_feed: true
+twitter_feed_setting: 'noheader, noscrollbar, nofooter, noborders'
+tweets_limit: 3
+twitter_ref_src: iamsohair?ref_src=twsrc%5Etfw
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
